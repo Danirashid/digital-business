@@ -1,0 +1,110 @@
+.n-wrapper{
+    background-color: var(--primary-color);
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+.sticky{        
+    position: fixed;
+    top: 0;
+    box-shadow: 10px 12px 48px rgba(181, 187, 203, .206);
+    background: #fff;
+}
+.n-container{
+    display: flex;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+.sticky .n-container{
+    color: var(--title-color);
+    padding: 1rem;
+}
+.n-left{
+    cursor: pointer;
+    font-weight: bold;
+}
+.n-right{
+    display: flex;
+    text-transform: uppercase;
+    gap: 2rem;
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+}
+.n-menu{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.n-menu span{
+    cursor: pointer;
+}
+.fund-btn{
+    color: var(--dark-bg);
+    background-color: var(--third-color);
+    padding: 1rem 1.6rem;
+    text-transform: capitalize;
+    border-radius: 999px;
+}
+.mn-container{
+    display: none;
+    
+}
+@media (max-width: 1200px) {
+    .n-container{
+        display: none;
+    }
+    .mn-container{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        padding: 1rem;
+        background-color: var(--primary-color);
+    }
+    .mn-container>:nth-child(1){
+        font-weight: bold;
+        
+    }
+    .mn-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 3.9rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+        left: 0;
+        transform: translateX(150%);
+        transition: all 400ms ease-in-out;
+        background-color: var(--primary-color);
+        width: 100%;
+        height: calc(100vh - 3.9rem);
+        z-index: 99;
+        font-size: 1.2rem;
+    }
+    .mn-menu a{
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--border-color);
+    }
+    .m-funded{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        box-sizing: border-box;
+        padding: 1rem 0;
+        background-color: var(--third-color);
+        color: var(--dark-bg);
+        border-radius: 999px;
+    }
+}
+

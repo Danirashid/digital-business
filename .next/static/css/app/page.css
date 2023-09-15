@@ -1,0 +1,813 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/Navbar/Navbar.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.n-wrapper{
+    background-color: var(--primary-color);
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+.sticky{        
+    position: fixed;
+    top: 0;
+    box-shadow: 10px 12px 48px rgba(181, 187, 203, .206);
+    background: #fff;
+}
+.n-container{
+    display: flex;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+.sticky .n-container{
+    color: var(--title-color);
+    padding: 1rem;
+}
+.n-left{
+    cursor: pointer;
+    font-weight: bold;
+}
+.n-right{
+    display: flex;
+    text-transform: uppercase;
+    gap: 2rem;
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+}
+.n-menu{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.n-menu span{
+    cursor: pointer;
+}
+.fund-btn{
+    color: var(--dark-bg);
+    background-color: var(--third-color);
+    padding: 1rem 1.6rem;
+    text-transform: capitalize;
+    border-radius: 999px;
+}
+.mn-container{
+    display: none;
+    
+}
+@media (max-width: 1200px) {
+    .n-container{
+        display: none;
+    }
+    .mn-container{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        padding: 1rem;
+        background-color: var(--primary-color);
+    }
+    .mn-container>:nth-child(1){
+        font-weight: bold;
+        
+    }
+    .mn-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 3.9rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+        left: 0;
+        transform: translateX(150%);
+        transition: all 400ms ease-in-out;
+        background-color: var(--primary-color);
+        width: 100%;
+        height: calc(100vh - 3.9rem);
+        z-index: 99;
+        font-size: 1.2rem;
+    }
+    .mn-menu a{
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--border-color);
+    }
+    .m-funded{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        box-sizing: border-box;
+        padding: 1rem 0;
+        background-color: var(--third-color);
+        color: var(--dark-bg);
+        border-radius: 999px;
+    }
+}
+
+
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./app/page.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+.app{
+    position: relative;
+    transition: all 300ms ease-out;    
+}
+.tag{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.title{
+    font-size: 2.6rem;
+    color: var(--title-color);
+    font-weight: bold;
+    text-align: center;
+    line-height: 3.5rem;
+    text-transform: capitalize;
+}
+.des{
+    color: var(--text-color);
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+.sec-title{
+    color: var(--title-color);
+    font-size: 2rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+}
+.text{
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+@media (max-width: 786px) {
+    .title{
+        font-size: 2.2rem;
+    }
+    .sec-title{
+        font-size: 1.8rem;
+    }
+    .des{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 640px) {
+    .title{
+        font-size: 1.8rem;
+    }
+    .sec-title{
+        font-size: 1.6rem;
+    }
+   
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/Navbar/Hero/Hero.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.h-wrapper{
+    background-color: var(--primary-color);
+    height: 120vh;
+    overflow: hidden;
+}
+.h-wrapper .container{
+    padding-top: 8rem;
+}
+.hero-arrow{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    max-width: 60rem;
+}
+
+
+.h-container{
+    display: flex;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+/* left side styling */
+.h-left{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 5rem;
+}
+.image-row{
+    display: flex;
+    gap: 2rem;
+}
+.person-pill{
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 999px;
+}
+.person-pill-bg{
+    border-radius: 999px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+.person-pill-bg >img{
+    width: 100%;
+    object-fit: cover;
+    scale: 2;
+    margin-top: 4rem;
+}
+.image-row :nth-child(2){
+    transform: translateY(-4rem);
+}
+/* right side styling */
+.h-right{
+    flex: 1.25 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.h-title{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    color: var(--third-color);
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.h-title > :nth-child(3) {
+    color: #fff;
+}
+.h-des{
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+@media (max-width: 1024px) {
+    .h-wrapper{
+        height: max-content;
+    }
+    .h-wrapper .container{
+        padding-top: 5rem;
+    }
+    .h-container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding-bottom: 3rem;
+        align-items: center;
+    }
+    .hero-arrow{
+        display: none;
+    }
+    .h-right{
+        flex: 1 1;
+        align-items: center;
+    }
+    .h-title{
+        display: flex;
+        font-size: 2.2rem;
+    }
+    .h-des{
+        font-size: 1.2rem;
+        text-align: center;
+        width: 80%;
+    }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/Email box/EmailBox.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.emailbox{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 999px;
+    padding: 1rem 2rem;
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+.emailbox input{
+    border: none;
+    outline: none;
+    flex: 1 1;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+    margin-left: 1rem;
+    font-family: '__Josefin_Sans_74a41f', '__Josefin_Sans_Fallback_74a41f';
+}
+.emailbox input::placeholder{
+    font-size: 0.8rem;
+}
+.funded-btn{
+    background-color: var(--secondary-color);
+    color: #fff;
+    position: absolute;
+    right: 0.5rem;
+    height: 80%;
+    padding: 0rem 2rem;
+    border-radius: 999px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/BrandingVideo/BrandingVideo.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.bv-container .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+.bv-video{
+    width: 95%;
+    margin-top: -10rem;
+    border-radius: 4rem;
+    z-index: 1;
+}
+@media (max-width: 1024px) {
+    .bv-video{
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 786px){
+    .bv-video{
+        margin-top: 2rem;
+    }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/WhatWeDo/WhatWeDo.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.wwd-wrapper{
+    position: relative;
+}
+.wwd-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    gap: 2rem;
+}
+.wwd-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 75%;
+}
+.wwd-blocks{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+.block{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+}
+.block-features{
+    display: flex;
+    margin-top: 1rem;   
+    gap: 1rem;
+}
+.block-feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid hsla(0, 0%, 59%, 0.17);
+    width: 100%;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+.block:nth-child(1) >.block-features>:nth-child(2){
+    margin-top: 3rem;
+}
+.block:nth-child(2) >.block-features>:nth-child(1),
+.block:nth-child(2) >.block-features>:nth-child(3){
+    margin-top: 2rem;
+}
+.wwd-support{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+    align-items: center;
+    padding: 2rem;
+}
+.wwd-support>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.wwd-support>:nth-child(1){
+    flex: 1 1;
+}
+.wwd-support>:nth-child(2){
+    flex: 1.6 1;
+}
+@media (max-width: 990px) {
+    .wwd-blocks{
+        flex-direction: column;
+    }
+}
+@media (max-width: 786px) {
+    .wwd-support{
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px){
+    .wwd-block{
+        width: 80%;
+        margin: auto;
+    }
+    .block-features{
+        flex-direction: column;
+    }
+    .block-feature{
+        margin-top: 0rem!important;
+    }
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/OurDiff/OurDiff.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.od-wrapper{
+   padding-top: 15rem;
+}
+
+.od-contianer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.od-head{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.od-head .tag{
+    color: #fff;
+    
+}
+.od-head .text{
+    color: #fff;
+    max-width: 65%;   
+}
+.od-features{
+    display: flex;
+    
+    gap: 2rem;
+    
+    
+}
+.od-feature{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+   background: #fff;
+   padding: 2rem;
+   gap: 1rem;
+   align-items: center;
+   border-radius: 2rem;
+   text-align: center;
+   box-shadow: var(--shadow);
+   margin-bottom: 10rem;
+   margin-top: 2rem;
+}
+
+@media (max-width:  990px) {
+    .od-features{
+        flex-direction: column;
+    }
+}
+@media (max-width: 590px) {
+    .od-feature{
+        width: 80%;
+        margin: auto;
+    }
+    
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/HowItWork/HowItWork.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.hiw-wrapper .container{
+    padding-top: 13rem;
+}
+.hiw-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hiw-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 35rem;
+    margin: auto;
+    
+}
+.hiw-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.hiw-feature{
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    border-radius: 2rem;
+    max-width: 38rem;
+    margin: auto;
+    width: max-content;
+    background-color: var(--light-bg);
+}
+.hiw-feature .details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    translate: -18% 0rem;
+    align-items: flex-start;
+}
+.hiw-feature .details>:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.hiw-feature:nth-of-type(2){
+    margin-right: 10rem;
+}
+@media (max-width: 1280px) {
+    .hiw-feature{
+        max-width: 80%;
+    }
+    .hiw-feature:nth-of-type(2){
+        margin-left: 10rem;
+    }
+    .hiw-feature .details{
+        translate: 0% 0rem;
+    }
+
+}
+@media (max-width: 576px) {
+    .hiw-feature{
+        flex-direction: column-reverse;
+        
+    }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/WhoWeInvest/WhoWeInvest.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+.wwi-wrapper .container{
+    padding-top: 13rem;
+}
+.wwi-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wwi-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.wwi-container >div{
+    flex: 1 1;
+}
+.wwi-left .head{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.wwi-left .head .title{
+    text-align: left;
+    color: #fff;
+}
+.wwi-features{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.wwi-feature{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 28rem;
+}
+.wwi-feature .des{
+    color: var(--fourth-color);
+}
+.wwi-feature .text{
+    color: #fff;
+    text-align: justify;
+}
+.wwi-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+.wwi-right img{
+    width: 100%;
+}
+@media (max-width: 990px) {
+    .wwi-container{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .wwi-right{
+        align-self: center;
+        margin-top: 2rem;
+    }
+    .wwi-right img{
+        max-width: 20rem;
+        max-height: 15rem;
+    }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/Testimonials/Testimonials.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+.t-wrapper .container{
+    padding-top: 13rem;
+}
+.t-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.t-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 50rem;
+}
+/* Slick Slider */
+.slick-slider{
+    margin-top: 5rem;
+}
+.slick-track{
+    padding: 4rem 0rem;
+}
+.slick-slider >div{
+    padding: 0 20px;
+}
+.slick-dots{
+    bottom: 0 !important;
+}
+.comment{
+    display: flex !important;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+    box-sizing: border-box;
+    gap: 3rem;
+    padding: 2rem;
+    max-width: 370px
+}
+.c-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    height: 200px;
+    
+}
+.c-content span{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.c-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.c-avatar{
+    background-color: #877eb5;
+    color: #fff;
+    display: flex;
+    border-radius: 100%;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+}
+.c-person{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.c-person>:nth-child(1){
+    font-weight: bold;
+}
+.c-person>:nth-child(2){
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: rgba(128, 128, 128, 0.688);
+
+}
+@media (min-width: 1280px) {
+    .slick-slide.slick-active.slick-current + .slick-slide .comment{
+        transition: all 1000ms ease-in-out;
+        transform: translate(-30px);
+        scale: 1.1;
+        box-shadow: var(--shadow);
+    }
+    
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/utils/Components/Footer/Footer.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.f-wrapper .container{
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    
+}
+.f-wrapper{
+    background-color: var(--primary-color);
+}
+.f-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.f-container .title{
+    color: #fff;
+}
+.f-container .emailbox{
+    max-width: 36rem;
+}
+.f-container hr{
+    border-color: var(--border-color-light);
+    width: 100%;
+}
+.f-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.f-menu span{
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+@media (max-width: 990px){
+    .f-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}

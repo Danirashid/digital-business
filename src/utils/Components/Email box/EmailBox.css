@@ -1,0 +1,35 @@
+.emailbox{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 999px;
+    padding: 1rem 2rem;
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+}
+.emailbox input{
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+    margin-left: 1rem;
+    font-family: '__Josefin_Sans_74a41f', '__Josefin_Sans_Fallback_74a41f';
+}
+.emailbox input::placeholder{
+    font-size: 0.8rem;
+}
+.funded-btn{
+    background-color: var(--secondary-color);
+    color: #fff;
+    position: absolute;
+    right: 0.5rem;
+    height: 80%;
+    padding: 0rem 2rem;
+    border-radius: 999px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

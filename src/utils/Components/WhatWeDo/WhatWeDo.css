@@ -1,0 +1,108 @@
+.wwd-wrapper{
+    position: relative;
+}
+.wwd-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    gap: 2rem;
+}
+.wwd-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 75%;
+}
+.wwd-blocks{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+.block{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+}
+.block-features{
+    display: flex;
+    margin-top: 1rem;   
+    gap: 1rem;
+}
+.block-feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid hsla(0, 0%, 59%, 0.17);
+    width: 100%;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    height: fit-content;
+}
+.block:nth-child(1) >.block-features>:nth-child(2){
+    margin-top: 3rem;
+}
+.block:nth-child(2) >.block-features>:nth-child(1),
+.block:nth-child(2) >.block-features>:nth-child(3){
+    margin-top: 2rem;
+}
+.wwd-support{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+    align-items: center;
+    padding: 2rem;
+}
+.wwd-support>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.wwd-support>:nth-child(1){
+    flex: 1;
+}
+.wwd-support>:nth-child(2){
+    flex: 1.6;
+}
+@media (max-width: 990px) {
+    .wwd-blocks{
+        flex-direction: column;
+    }
+}
+@media (max-width: 786px) {
+    .wwd-support{
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px){
+    .wwd-block{
+        width: 80%;
+        margin: auto;
+    }
+    .block-features{
+        flex-direction: column;
+    }
+    .block-feature{
+        margin-top: 0rem!important;
+    }
+}
